@@ -1,6 +1,6 @@
 import type { Page } from 'playwright/test';
 import { LoginPage } from '../pages/loginPage';
-import { DashboardPage } from "../pages/dashboardPage";
+import { DashboardPage } from '../pages/dashboardPage';
 
 export class LoginActions {
   private loginPage: LoginPage;
@@ -20,5 +20,13 @@ export class LoginActions {
     await this.loginPage.goto();
     await this.loginPage.login(email, password);
     await this.dashBoardPage.dashboardLoadUnSuccessful();
+  }
+
+  public async createSystemUser(userName: string, password: string) {
+    return await this.dashBoardPage.createSystemUser(userName, password);
+  }
+
+  public async editSystemUser(userName: string) {
+    return await this.dashBoardPage.editSystemUser(userName);
   }
 }

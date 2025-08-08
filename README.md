@@ -1,0 +1,1 @@
+# Orange HR - Automation tests

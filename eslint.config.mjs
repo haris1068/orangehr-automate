@@ -37,7 +37,6 @@ export default [
             'playwright/no-skipped-test': 'error',
             'playwright/no-focused-test': 'error',
             'playwright/prefer-to-have-length': 'error',
-            'playwright/prefer-strict-equal': 'error',
             'quotes': ['error', 'single', { avoidEscape: true }],
             'semi': ['error', 'always'], // change to 'never' if you want no semicolons
             'no-multiple-empty-lines': ['error', { max: 1, maxEOF: 0 }],

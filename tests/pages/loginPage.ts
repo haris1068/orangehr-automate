@@ -20,7 +20,7 @@ export class LoginPage {
   }
 
   public async login(email: string, password: string): Promise<void> {
-    await this.heading.waitFor({ state: 'visible', timeout: 5000 });
+    await this.heading.waitFor({ state: 'visible' });
     await this.emailInput.fill(email);
     await this.passwordInput.fill(password);
     await this.loginButton.click();

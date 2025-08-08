@@ -10,7 +10,7 @@ const config: PlaywrightTestConfig = {
   testDir: './tests/spec',
   workers: 1,
   use: {
-    headless: false,
+    headless: true,
     screenshot: 'only-on-failure',
     trace: 'retain-on-failure',
     actionTimeout: 30 * 1000,

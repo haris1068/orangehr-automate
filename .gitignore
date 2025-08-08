@@ -1,0 +1,11 @@
+.idea
+
+# dependencies
+/node_modules
+
+# misc
+npm-debug.log*
+yarn-error.log
+
+/test-results
+.env

@@ -29,4 +29,8 @@ jobs:
         run: npx playwright install chromium --with-deps
 
       - name: Run Playwright tests
+        env:
+          ADMIN_USER: Admin
+          ADMIN_PASSWORD: admin123
+          HEADLESS_MODE: true
         run: npm run test
